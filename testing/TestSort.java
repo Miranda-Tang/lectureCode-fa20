@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-/** Tests the the Sort class. */
+/** Tests the Sort class. */
 public class TestSort {
     /** Test the Sort.sort method. */
     @Test
