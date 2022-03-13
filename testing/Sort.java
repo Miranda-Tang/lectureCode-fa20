@@ -6,7 +6,7 @@ public class Sort {
 
 	/** Sorts x starting at position start. */
 	private static void sort(String[] x, int start) {
-	    if (start == x.length) {
+	    if (start == x.length-1) {
 	        return;
         }
 	    int smallestIndex = findSmallest(x, start);
@@ -24,7 +24,7 @@ public class Sort {
 	/** Return the index of the smallest String in x, starting at start. */
 	public static int findSmallest(String[] x, int start) {
         int smallestIndex = start;
-        for (int i = start; i < x.length; i += 1) {
+        for (int i = start+1; i < x.length; i += 1) {
             int cmp = x[i].compareTo(x[smallestIndex]);
             // from the internet, if x[i] < x[smallestIndex], cmp will be -1.
             if (cmp < 0) {
